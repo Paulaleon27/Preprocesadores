@@ -1,0 +1,15 @@
+extend componentes/plantilla.pug
+block contenidos
+    div.homepage
+        section.menu
+            h1.menu__items #{menu}
+            ul.menu__lista
+                each items in enlaces 
+                    li.menu__li=items
+        section.principal
+            h1.principal__items #{titulos[0]}
+            p.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sunt vitae, aliquid doloremque obcaecati velit molestiae, fuga ducimus quisquam ratione dolorum, sapiente laborum magni exercitationem quam perferendis maiores ipsa modi!
+            p.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sequi fuga ad aspernatur ullam, dignissimos, culpa ducimus voluptates non amet dolore, expedita deserunt fugit. Dolorem non ad ipsum aperiam optio?
+            a.boton Ver mas
